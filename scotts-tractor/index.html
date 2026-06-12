@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Scott's Tractor Service — brush hogging, box scraping, loading, and excavation in Fruitland, Idaho and the Treasure Valley. Owner-operated, professional equipment rental."/>
+  <meta name="keywords" content="brush hogging Fruitland, tractor service Idaho, land clearing, excavation, box scraping, Treasure Valley tractor, brush hog rental"/>
+  <meta name="author" content="Scott's Tractor Service"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="language" content="English"/>
+  <link rel="canonical" href="https://scotts-tractor-site.com/"/>
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="business.business"/>
+  <meta property="og:title" content="Scott's Tractor Service | Brush Hogging & Excavation in Fruitland, Idaho"/>
+  <meta property="og:description" content="Professional brush hogging, box scraping, loading, and excavation services in Fruitland, Idaho and the Treasure Valley."/>
+  <meta property="og:image" content="assets/images/LogoTrans.png"/>
+  <meta property="og:url" content="https://scotts-tractor-site.com/"/>
+  
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Scott's Tractor Service",
+    "image": "assets/images/LogoTrans.png",
+    "description": "Owner-operated brush hogging, box scraping, loading, and excavation services",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Fruitland",
+      "addressRegion": "ID",
+      "postalCode": "83619",
+      "addressCountry": "US"
+    },
+    "telephone": "(208) 740-3044",
+    "areaServed": ["Fruitland", "Payette", "New Plymouth", "Weiser", "Cambridge", "Emmett", "Caldwell", "Treasure Valley", "Idaho"],
+    "priceRange": "$$",
+    "serviceType": ["Brush Hogging", "Box Scraping", "Grading", "Excavation", "Loading", "Land Clearing"],
+    "equipmentType": ["Mahindra 2540 Tractor", "Rotary Brush Cutter", "Box Scraper", "Front End Loader", "Backhoe"]
+  }
+  </script>
+
+  <title>Scott's Tractor Service | Fruitland, Idaho - Brush Hogging & Excavation</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="icon" href="assets/images/LogoTrans.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/images/LogoTrans.png" />
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- ── SCROLL PROGRESS ── -->
+<div id="progress-bar"></div>
+
+<!-- ── NAVBAR ── -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">
+    <img src="assets/images/LogoTrans.png" alt="Scott's Tractor Service logo" />
+    Scott's <span>Tractor</span> Service
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why-scott">Why Scott</a></li>
+    <li><a href="#equipment">Equipment</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#service-area">Service Area</a></li>
+    <li><a href="#contact" class="nav-cta">Call Now</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile nav dropdown -->
+<div class="mobile-nav" id="mobile-nav">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#why-scott">Why Scott</a>
+  <a href="#equipment">Equipment</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#service-area">Service Area</a>
+  <a href="#contact">📞 (208) 740-3044 Option 2</a>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
+<section id="hero">
+
+  <!--
+    VIDEO BACKGROUND
+    ─────────────────
+    To add your video:
+      1. Export or download your clip as an MP4 (ideally landscape, 1920×1080)
+      2. Copy it into the assets/video/ folder and name it hero.mp4
+      3. Change the src below from "" to "assets/video/hero.mp4"
+      4. The placeholder text will disappear automatically
+
+    Tip: Keep the file under ~15MB. Use HandBrake (free) to compress.
+  -->
+  <video
+    id="hero-video"
+    autoplay muted loop playsinline
+    playsinline
+    style="display:none;"
+  >
+    <source src="assets/video/hero.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Static gradient background (visible when no video) -->
+  <div class="hero-static-bg"></div>
+
+  <!-- Dark overlay (always on, dims video or gradient) -->
+  <div class="hero-overlay"></div>
+
+  <!-- Video placeholder indicator -->
+  <div class="hero-placeholder-frame" id="hero-video-placeholder">
+    <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="rgba(200,16,46,0.4)" stroke-width="1.2" style="margin-bottom:0.5rem;">
+      <polygon points="5 3 19 12 5 21 5 3"/>
+    </svg>
+    <span class="ph-label">Add your video: assets/video/hero.mp4</span>
+  </div>
+
+  <!-- Hero content -->
+  <div class="hero-content">
+    <div class="hero-eyebrow reveal">
+      <span class="dot"></span>
+      Fruitland, Idaho &amp; Treasure Valley
+    </div>
+    <h1 class="hero-title reveal">
+      <span class="line-green">Scott's Tractor Service</span>
+      Land <span class="line-red">Done Right</span>
+    </h1>
+    <p class="hero-sub reveal">
+      Brush hogging, box scraping, loading, and digging —
+      powered by a 2017 Mahindra 2540 and a solid day's work ethic.
+    </p>
+    <div class="hero-btns reveal">
+      <a href="#contact" class="btn btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5 19.79 19.79 0 01.12 2.82 2 2 0 012.11 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.46-.46a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Get a Quote
+      </a>
+      <a href="#services" class="btn btn-outline">See Services</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     STATS BAR
+════════════════════════════════════════════ -->
+<div id="stats">
+  <div class="stats-grid stagger">
+    <div class="stat-item">
+      <div class="stat-num" data-target="3" data-suffix="+">0+</div>
+      <div class="stat-label">Years Operating</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num" data-target="4" data-suffix="">0</div>
+      <div class="stat-label">Attachments</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num" data-target="40" data-suffix=" HP">0 HP</div>
+      <div class="stat-label">Mahindra Engine</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num" data-target="100" data-suffix="%">0%</div>
+      <div class="stat-label">Owner Operated</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     ABOUT
+════════════════════════════════════════════ -->
+<section id="about" class="section section--dark">
+  <div class="section-inner">
+    <div class="about-grid">
+
+      <div class="about-text">
+        <span class="section-tag reveal">About Scott</span>
+        <h2 class="section-title reveal">Hi, I'm Scott.</h2>
+        <div class="divider reveal"></div>
+        <p class="reveal">
+          I'm a local owner-operator based out of <strong>Fruitland, Idaho</strong>, and I take
+          real pride in the work I put out. Whether it's a pasture that's gotten out of hand,
+          a road that needs some attention, or a digging job — I show up with the right
+          equipment and get it done.
+        </p>
+        <p class="reveal">
+          <em>Brush hogging is my bread and butter.</em> There's something satisfying about
+          turning overgrown land into something clean and usable again. My 2017
+          <strong>Mahindra 2540</strong> is built for a full day's work, and I've got the
+          attachments to handle whatever your property needs.
+        </p>
+        <p class="reveal">
+          I'm owner-operated — meaning when you call, you get me, and when I show up,
+          it's me doing the work.
+        </p>
+        <a href="#contact" class="btn btn-primary reveal" style="margin-top:0.5rem; display:inline-flex;">
+          Let's Talk
+        </a>
+      </div>
+
+      <div class="about-imgs stagger">
+        <!-- ABOUT PHOTOS: images will appear when files exist at assets/images/ -->
+        <div class="ph span2 tall">
+          <img src="assets/images/featured.jpg" alt="Scott standing next to his Mahindra tractor in a field" onerror="this.parentElement.style.display='none'" loading="lazy"/>
+        </div>
+        <div class="ph landscape">
+          <img src="assets/images/about-1.jpg" alt="Tractor working a pasture" onerror="this.parentElement.style.display='none'" loading="lazy"/>
+        </div>
+        <div class="ph landscape">
+          <img src="assets/images/about-2.jpg" alt="Before and after brush hogging" onerror="this.parentElement.style.display='none'" loading="lazy"/>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SERVICES
+════════════════════════════════════════════ -->
+<section id="services" class="section section--mid">
+  <div class="section-inner">
+    <span class="section-tag reveal">What I Do</span>
+    <h2 class="section-title reveal">Services</h2>
+    <div class="divider reveal"></div>
+    <div class="services-grid stagger">
+
+      <div class="service-card">
+        <div class="card-img landscape" style="border-radius:0;">
+          <img src="assets/images/job1.jpg" alt="Job site with a tractor and brush hog" loading="lazy" />
+        </div>
+        <div class="card-body">
+          <h3>Brush Hogging</h3>
+          <p>My specialty. Overgrown pastures, fence lines, roadsides — rotary cutting clears it fast and clean. Great for maintaining fields, reducing fire hazard, and reclaiming land.</p>
+          <span class="card-chip red">Most Requested</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="card-img landscape" style="border-radius:0;">
+          <img src="assets/images/box1.jpg" alt="Grading ground with a scraper attachment" loading="lazy" />
+        </div>
+        <div class="card-body">
+          <h3>Box Scraping & Grading</h3>
+          <p>Driveway repairs, road leveling, site grading. The box scraper moves and redistributes material efficiently — keeping your gravel road drivable and your yard level.</p>
+          <span class="card-chip">Grading</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="card-img landscape" style="border-radius:0;">
+          <img src="assets/images/loader.jpg" alt="Front end loader moving material" loading="lazy" />
+        </div>
+        <div class="card-body">
+          <h3>Front End Loading</h3>
+          <p>Moving dirt, rock, debris, or materials around your property. The loader is great for cleanup jobs, site prep, and stacking or spreading material where you need it.</p>
+          <span class="card-chip">Loading</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="card-img landscape" style="border-radius:0;">
+          <img src="assets/images/hoe.jpg" alt="Backhoe digging a trench on a job site" loading="lazy" />
+        </div>
+        <div class="card-body">
+          <h3>Backhoe & Excavation</h3>
+          <p>Trenching, fence post holes, drainage ditches, and general digging. The backhoe handles jobs that need precision in tight spaces or ground that's too hard to hand-dig.</p>
+          <span class="card-chip">Excavation</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     WHY CHOOSE SCOTT
+════════════════════════════════════════════ -->
+<section id="why-scott" class="section section--mid">
+  <div class="section-inner">
+    <span class="section-tag reveal">Why Work With Scott</span>
+    <h2 class="section-title reveal">What Sets Me Apart</h2>
+    <div class="divider reveal"></div>
+    <div class="services-grid stagger">
+
+      <div class="service-card">
+        <div class="card-body">
+          <h3>Owner-Operated</h3>
+          <p>When you call, you get me. When I show up, it's me doing the work. No middleman, no outsourcing — just direct communication and quality craftsmanship.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="card-body">
+          <h3>Professional Equipment</h3>
+          <p>A well-maintained 2017 Mahindra 2540 with a full suite of attachments. Built to handle demanding fieldwork, day after day, with reliability you can count on.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="card-body">
+          <h3>Fair, Transparent Pricing</h3>
+          <p>No surprises, no hidden fees. You'll know what you're paying upfront. I stand behind my work and believe in building long-term relationships with my clients.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="card-body">
+          <h3>Quick Turnaround</h3>
+          <p>I'm local and flexible. Whether you need same-day work or have a specific timeline, I do my best to accommodate your schedule and get the job done efficiently.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="card-body">
+          <h3>Local Expertise</h3>
+          <p>I know the Treasure Valley and surrounding areas well. I understand the land, the climate, and what works best for properties in this region.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="card-body">
+          <h3>Proven Track Record</h3>
+          <p>Years of experience in brush hogging, grading, loading, and excavation. I've handled everything from small residential properties to larger land management projects.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     EQUIPMENT
+════════════════════════════════════════════ -->
+<section id="equipment" class="section section--green">
+  <div class="section-inner">
+    <span class="section-tag reveal">The Machine</span>
+    <h2 class="section-title reveal">2017 Mahindra 2540</h2>
+    <div class="divider reveal"></div>
+
+    <!-- Feature: The Tractor -->
+    <div class="equip-feature">
+      <div class="equip-img reveal from-left">
+        <img src="assets/images/featured.jpg" alt="Scott's tractor on site" loading="lazy" />
+      </div>
+      <div class="equip-info reveal from-right">
+        <span class="model-badge">2017 · Mahindra 2540</span>
+        <h3>Built for the Long Day</h3>
+        <p>The Mahindra 2540 is a 40-horsepower compact utility tractor with 4WD, built tough for demanding fieldwork. Reliable diesel power, a proven drivetrain, and the versatility to run every attachment I carry.</p>
+        <div class="spec-pills">
+          <span class="spec-pill">40 HP Diesel</span>
+          <span class="spec-pill">4WD</span>
+          <span class="spec-pill">Shuttle Trans</span>
+          <span class="spec-pill">3-Point Hitch</span>
+          <span class="spec-pill">PTO Driven</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature: Brush Hog -->
+    <div class="equip-feature">
+      <div class="equip-img reveal from-left">
+        <img src="assets/images/about-1.jpg" alt="Brush hog cutting a field" loading="lazy" />
+      </div>
+      <div class="equip-info reveal from-right">
+        <span class="model-badge">Attachment</span>
+        <h3>Rotary Brush Cutter</h3>
+        <p>A heavy-duty rotary cutter that handles grass, brush, small saplings, and thick weeds without blinking. My most-used tool and the reason most people call me.</p>
+        <div class="spec-pills">
+          <span class="spec-pill">PTO Powered</span>
+          <span class="spec-pill">Rear Mount</span>
+          <span class="spec-pill">Heavy Duty</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature: Box Scraper + FEL + Backhoe in a row -->
+    <div class="reveal" style="margin-top:1rem;">
+      <h3 style="font-size:1.1rem; color:var(--muted); margin-bottom:1.5rem; letter-spacing:0.05em;">Additional Attachments</h3>
+    </div>
+    <div class="services-grid stagger" style="margin-top:0;">
+
+      <div class="service-card">
+        <div class="card-img landscape" style="border-radius:0;">
+          <img src="assets/images/Box.jpg" alt="Box scraper on a worksite" loading="lazy" />
+        </div>
+        <div class="card-body">
+          <h3>Box Scraper</h3>
+          <p>Rear-mount blade for leveling, grading, and backfilling. Built for road and driveway work.</p>
+          <span class="card-chip">Grading</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="card-img landscape" style="border-radius:0;">
+          <img src="assets/images/Loader.jpg" alt="Front end loader lifting dirt" loading="lazy" />
+        </div>
+        <div class="card-body">
+          <h3>Front End Loader</h3>
+          <p>Hydraulic bucket loader for moving and placing material. Pairs well with any cleanup job.</p>
+          <span class="card-chip">Loading</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="card-img landscape" style="border-radius:0;">
+          <img src="assets/images/hoe.jpg" alt="Backhoe digging a trench" loading="lazy" />
+        </div>
+        <div class="card-body">
+          <h3>Backhoe</h3>
+          <p>Rear-mount excavator for digging, trenching, and post holes. Great for utility work and drainage.</p>
+          <span class="card-chip">Excavation</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     GALLERY
+════════════════════════════════════════════ -->
+<section id="gallery" class="section section--dark">
+  <div class="section-inner">
+    <span class="section-tag reveal">Out in the Field</span>
+    <h2 class="section-title reveal">Work Gallery</h2>
+    <div class="divider reveal"></div>
+
+    <!--
+      GALLERY — replace each <div class="ph"> with:
+      <img src="assets/images/job1.jpg" alt="Before brush hogging">
+      The wide and tall classes control the grid layout — keep them.
+    -->
+    <div class="gallery-masonry reveal">
+      <div class="gallery-item wide">
+        <img src="assets/images/job1.jpg" alt="Before and after brush hogging" onerror="this.parentElement.style.display='none'" loading="lazy"/>
+      </div>
+      <div class="gallery-item tall">
+        <img src="assets/images/Job2.jpg" alt="Tractor cutting tall grass" onerror="this.parentElement.style.display='none'" loading="lazy"/>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/Job3.jpg" alt="Leveling a driveway with box scraper" onerror="this.parentElement.style.display='none'" loading="lazy"/>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/Job4.jpg" alt="Front end loader moving gravel" onerror="this.parentElement.style.display='none'" loading="lazy"/>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/Job5.jpg" alt="Backhoe digging a trench" onerror="this.parentElement.style.display='none'" loading="lazy"/>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/Job6.jpg" alt="Finished site - clean and usable" onerror="this.parentElement.style.display='none'" loading="lazy"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SERVICE AREA
+════════════════════════════════════════════ -->
+<section id="service-area" class="section section--green">
+  <div class="section-inner">
+    <span class="section-tag reveal">Where I Work</span>
+    <h2 class="section-title reveal">Service Area</h2>
+    <div class="divider reveal"></div>
+    
+    <!-- Service Area List -->
+    <div style="max-width:800px; margin:0 auto 3rem; text-align:center;">
+      <h3 style="margin-bottom:2rem; color:var(--text); font-size:1.3rem;">Proud to Serve the Following Areas</h3>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:1rem; margin-bottom:2rem;">
+        <div style="padding:0.5rem; font-size:0.95rem;">Fruitland</div>
+        <div style="padding:0.5rem; font-size:0.95rem;">Payette</div>
+        <div style="padding:0.5rem; font-size:0.95rem;">New Plymouth</div>
+        <div style="padding:0.5rem; font-size:0.95rem;">Weiser</div>
+        <div style="padding:0.5rem; font-size:0.95rem;">Cambridge</div>
+        <div style="padding:0.5rem; font-size:0.95rem;">Emmett</div>
+        <div style="padding:0.5rem; font-size:0.95rem;">Caldwell</div>
+        <div style="padding:0.5rem; font-size:0.95rem;">Treasure Valley</div>
+      </div>
+      <p style="font-size:0.95rem; color:var(--muted); margin-bottom:2rem;">All areas in between</p>
+      
+      <p style="line-height:1.8; margin-bottom:1.5rem;">
+        If your project site is beyond that radius, just let us know! I frequently work farther out, and special accommodations can usually be made to suit your project—and your wallet.
+      </p>
+      
+      <p style="font-size:0.9rem; color:var(--muted); line-height:1.7; padding:1rem; background:rgba(0,0,0,0.1); border-radius:6px;">
+        <strong>Note:</strong> Standard pricing includes service within a reasonable radius of Fruitland, Idaho. Locations significantly farther out may be subject to additional mileage charges.
+      </p>
+    </div>
+
+    <!-- Google Map -->
+    <div class="reveal" style="margin-top:2rem; max-width:1000px; margin-left:auto; margin-right:auto;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d216480.602420709!2d-116.87007812939842!3d44.05666325322692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1772073937770!5m2!1sen!2sus" width="100%" height="450" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════ -->
+<section id="contact" class="section">
+  <div class="section-inner">
+    <div class="contact-wrap">
+      <span class="section-tag reveal">Get In Touch</span>
+      <h2 class="section-title reveal">Ready to Get to Work?</h2>
+      <div class="divider reveal" style="margin-left:auto;margin-right:auto;"></div>
+      <p class="reveal">
+        Got a field that's gotten out of hand, a road that needs leveling, or a hole
+        that needs digging? Give Scott a call — no middleman, just straight talk and
+        a fair price.
+      </p>
+      <a href="tel:2087403044" class="phone-link reveal">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5 19.79 19.79 0 01.12 2.82 2 2 0 012.11 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.46-.46a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        (208) 740-3044
+      </a>
+      <div class="contact-meta reveal">
+        <span>Fruitland, Idaho</span> &nbsp;·&nbsp; Serving the Treasure Valley &amp; Surrounding Areas
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <p>
+    <img class="footer-logo" src="assets/images/LogoTrans.png" alt="Scott's Tractor Service logo" />
+    &copy; 2025 <strong>Scott's Tractor Service</strong> &nbsp;·&nbsp; Fruitland, Idaho &nbsp;·&nbsp; (208) 740-3044
+  </p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
